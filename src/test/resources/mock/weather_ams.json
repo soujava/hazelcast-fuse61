@@ -1,0 +1,41 @@
+{
+  "coord": {
+    "lon": 4.89,
+    "lat": 52.37
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "Sky is Clear",
+      "icon": "01d"
+    }
+  ],
+  "base": "cmc stations",
+  "main": {
+    "temp": 284.5,
+    "pressure": 1024,
+    "humidity": 76,
+    "temp_min": 284.15,
+    "temp_max": 285.15
+  },
+  "wind": {
+    "speed": 7.7,
+    "deg": 210
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1449059100,
+  "sys": {
+    "type": 1,
+    "id": 5204,
+    "message": 0.0048,
+    "country": "NL",
+    "sunrise": 1449041365,
+    "sunset": 1449070208
+  },
+  "id": 2759794,
+  "name": "Amsterdam",
+  "cod": 200
+}

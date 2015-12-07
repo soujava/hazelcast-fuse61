@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:hz="http://www.hazelcast.com/schema/spring"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.hazelcast.com/schema/spring
+        http://www.hazelcast.com/schema/spring/hazelcast-spring-3.0.xsd">
+
+
+    <context:annotation-config/>
+
+    <bean id="instance" class="com.hazelcast.core.Hazelcast" factory-method="newHazelcastInstance">
+        <constructor-arg>
+            <bean class="com.hazelcast.config.Config">
+                <property name="groupConfig">
+                    <bean class="com.hazelcast.config.GroupConfig">
+                        <property name="name" value="dev"/>
+                        <property name="password" value="dev-pass"/>
+                    </bean>
+                </property>
+            </bean>
+        </constructor-arg>
+    </bean>
+    <bean id="map" factory-bean="instance" factory-method="getMap">
+        <constructor-arg value="map"/>
+    </bean>
+
+
+    <bean id="jms" class="org.apache.camel.component.jms.JmsComponent">
+        <property name="connectionFactory">
+            <bean class="org.apache.activemq.ActiveMQConnectionFactory">
+                <property name="brokerURL" value="tcp://localhost:61616"/>
+            </bean>
+        </property>
+    </bean>
+
+    <!--+
+        | Route definitions
+        +-->
+    <bean id="apiRouteBuilder" class="com.hazelcast.routes.ApiRouteBuilder">
+        <property name="hazelcastInstance" ref="instance"/>
+    </bean>
+
+
+</beans>
