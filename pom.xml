@@ -286,5 +286,12 @@
         </resources>
     </build>
 
+    <repositories>
+        <repository>
+            <id>fuse</id>
+            <url>https://repo.fusesource.com/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+
 
 </project>
