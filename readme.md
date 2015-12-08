@@ -30,12 +30,17 @@ list |grep hazel
 ```
 
 set your Karaf terminal to read logs:
-```log:tail```
+
+```
+log:tail
+```
 
 Test the HZ endpoint:
 
 Open your FUSE admin panel and login:
-```http://localhost:8181/```
+```
+http://localhost:8181/
+```
 
 
 Go to the ActiveMQ section, select startEndpoint queue, click on the icon "Send" and paste the contents from the file src/test/resources/mock/weather_ams.json and send the message.
