@@ -19,7 +19,7 @@ public class ApiRouteBuilder extends RouteBuilder {
 
     public void define() throws Exception {
 
-        from("direct:queue:startEndpoint")
+        from("jms:queue:startEndpoint")
         .to("direct-vm:testHZ")
                 .process(new Processor() {
                     public void process(Exchange exchange) throws Exception {

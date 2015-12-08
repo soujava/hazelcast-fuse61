@@ -1,0 +1,274 @@
+vagrant@vagrantdevbox:/opt/fuse/jboss-fuse-6.1.1.redhat-412/bin$ ./fuse
+karaf: JAVA_HOME not set; results may vary
+Please wait while JBoss Fuse is loading...
+100% [========================================================================]
+
+      _ ____                  ______
+     | |  _ \                |  ____|             
+     | | |_) | ___  ___ ___  | |__ _   _ ___  ___
+ _   | |  _ < / _ \/ __/ __| |  __| | | / __|/ _ \
+| |__| | |_) | (_) \__ \__ \ | |  | |_| \__ \  __/
+ \____/|____/ \___/|___/___/ |_|   \__,_|___/\___|
+
+  JBoss Fuse (6.1.1.redhat-412)
+  http://www.redhat.com/products/jbossenterprisemiddleware/fuse/
+
+Hit '<tab>' for a list of available commands
+and '[cmd] --help' for help on a specific command.
+
+Open a browser to http://localhost:8181 to access the management console
+
+Create a new Fabric via 'fabric:create'
+or join an existing Fabric via 'fabric:join [someUrls]'
+
+Hit '<ctrl-d>' or 'osgi:shutdown' to shutdown JBoss Fuse.
+
+JBossFuse:karaf@root> log:tail
+2015-12-08 17:36:43,099 | INFO  | -611412-thread-2 | KarArtifactInstaller             | ?                                   ? | 29 - org.apache.karaf.deployer.kar - 2.3.0.redhat-611412 | Karaf archives will be extracted to /opt/fuse/jboss-fuse-6.1.1.redhat-412/system
+2015-12-08 17:36:43,099 | INFO  | -611412-thread-2 | KarArtifactInstaller             | ?                                   ? | 29 - org.apache.karaf.deployer.kar - 2.3.0.redhat-611412 | Timestamps for Karaf archives will be extracted to /opt/fuse/jboss-fuse-6.1.1.redhat-412/system/.timestamps
+2015-12-08 17:36:43,428 | INFO  | -611412-thread-2 | SecurityUtils                    | ?                                   ? | 27 - org.apache.sshd.core - 0.11.0 | Trying to register BouncyCastle as a JCE provider
+2015-12-08 17:36:43,500 | INFO  | -611412-thread-2 | SecurityUtils                    | ?                                   ? | 27 - org.apache.sshd.core - 0.11.0 | Registration succeeded
+2015-12-08 17:36:44,283 | INFO  | -611412-thread-1 | core                             | ?                                   ? | 49 - org.apache.aries.jmx.core - 1.0.1.redhat-611412 | Starting JMX OSGi agent
+2015-12-08 17:36:44,304 | INFO  | -611412-thread-1 | core                             | ?                                   ? | 49 - org.apache.aries.jmx.core - 1.0.1.redhat-611412 | Registering MBean with ObjectName [osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=d50ce524-351a-4b98-a6c9-4be043cb28ed] for service with service.id [12]
+2015-12-08 17:36:44,314 | INFO  | JMX OSGi Agent   | core                             | ?                                   ? | 49 - org.apache.aries.jmx.core - 1.0.1.redhat-611412 | Registering org.osgi.jmx.service.cm.ConfigurationAdminMBean to MBeanServer com.sun.jmx.mbeanserver.JmxMBeanServer@208cdf50 with name osgi.compendium:service=cm,version=1.3,framework=org.apache.felix.framework,uuid=d50ce524-351a-4b98-a6c9-4be043cb28ed
+2015-12-08 17:36:44,323 | INFO  | JMX OSGi Agent   | core                             | ?                                   ? | 49 - org.apache.aries.jmx.core - 1.0.1.redhat-611412 | Registering org.osgi.jmx.framework.BundleStateMBean to MBeanServer com.sun.jmx.mbeanserver.JmxMBeanServer@208cdf50 with name osgi.core:type=bundleState,version=1.7,framework=org.apache.felix.framework,uuid=d50ce524-351a-4b98-a6c9-4be043cb28ed
+2015-12-08 17:36:44,330 | INFO  | JMX OSGi Agent   | core                             | ?                                   ? | 49 - org.apache.aries.jmx.core - 1.0.1.redhat-611412 | Registering org.osgi.jmx.framework.wiring.BundleWiringStateMBean to MBeanServer com.sun.jmx.mbeanserver.JmxMBeanServer@208cdf50 with name osgi.core:type=wiringState,version=1.1,framework=org.apache.felix.framework,uuid=d50ce524-351a-4b98-a6c9-4be043cb28ed
+2015-12-08 17:36:44,331 | INFO  | JMX OSGi Agent   | core                             | ?                                   ? | 49 - org.apache.aries.jmx.core - 1.0.1.redhat-611412 | Registering org.osgi.jmx.framework.ServiceStateMBean to MBeanServer com.sun.jmx.mbeanserver.JmxMBeanServer@208cdf50 with name osgi.core:type=serviceState,version=1.7,framework=org.apache.felix.framework,uuid=d50ce524-351a-4b98-a6c9-4be043cb28ed
+2015-12-08 17:36:44,332 | INFO  | JMX OSGi Agent   | core                             | ?                                   ? | 49 - org.apache.aries.jmx.core - 1.0.1.redhat-611412 | Registering org.osgi.jmx.framework.PackageStateMBean to MBeanServer com.sun.jmx.mbeanserver.JmxMBeanServer@208cdf50 with name osgi.core:type=packageState,version=1.5,framework=org.apache.felix.framework,uuid=d50ce524-351a-4b98-a6c9-4be043cb28ed
+2015-12-08 17:36:44,332 | INFO  | JMX OSGi Agent   | core                             | ?                                   ? | 49 - org.apache.aries.jmx.core - 1.0.1.redhat-611412 | Registering org.osgi.jmx.framework.FrameworkMBean to MBeanServer com.sun.jmx.mbeanserver.JmxMBeanServer@208cdf50 with name osgi.core:type=framework,version=1.7,framework=org.apache.felix.framework,uuid=d50ce524-351a-4b98-a6c9-4be043cb28ed
+2015-12-08 17:36:45,116 | INFO  | -611412-thread-1 | ListCommandComponent             | ?                                   ? | 81 - org.apache.karaf.shell.scr - 2.3.0.redhat-611412 | Activating the Apache Karaf SCR List Command
+2015-12-08 17:36:45,134 | INFO  | -611412-thread-1 | DetailsCommandComponent          | ?                                   ? | 81 - org.apache.karaf.shell.scr - 2.3.0.redhat-611412 | Activating the Apache Karaf SCR Details Command
+2015-12-08 17:36:45,144 | INFO  | -611412-thread-1 | DeactivateCommandComponent       | ?                                   ? | 81 - org.apache.karaf.shell.scr - 2.3.0.redhat-611412 | Activating the Apache Karaf SCR Deactivate Command
+2015-12-08 17:36:45,158 | INFO  | -611412-thread-1 | ActivateCommandComponent         | ?                                   ? | 81 - org.apache.karaf.shell.scr - 2.3.0.redhat-611412 | Activating the Apache Karaf SCR Activate Command
+2015-12-08 17:36:45,203 | INFO  | -611412-thread-2 | ScrServiceMBeanImpl              | ?                                   ? | 83 - org.apache.karaf.management.mbeans.scr - 2.3.0.redhat-611412 | Activating the Apache Karaf SCR Service MBean
+2015-12-08 17:36:45,300 | INFO  | e-3.0.6-thread-1 | Activator                        | ?                                   ? | 100 - org.ops4j.pax.web.pax-web-runtime - 3.0.6 | EventAdmin support enabled, servlet events will be postet to topics.
+2015-12-08 17:36:45,304 | INFO  | e-3.0.6-thread-1 | Activator                        | ?                                   ? | 100 - org.ops4j.pax.web.pax-web-runtime - 3.0.6 | LogService support enabled, log events will be created.
+2015-12-08 17:36:45,308 | INFO  | e-3.0.6-thread-1 | Activator                        | ?                                   ? | 100 - org.ops4j.pax.web.pax-web-runtime - 3.0.6 | Pax Web started
+2015-12-08 17:36:45,425 | INFO  | -611412-thread-2 | BlueprintContainerImpl           | ?                                   ? | 14 - org.apache.aries.blueprint.core - 1.0.1.redhat-611412 | Bundle org.apache.aries.transaction.blueprint is waiting for dependencies [(objectClass=javax.transaction.TransactionManager)]
+2015-12-08 17:36:45,524 | INFO  | pool-9-thread-1  | Server                           | ?                                   ? | 94 - org.eclipse.jetty.aggregate.jetty-all-server - 8.1.14.v20131031 | jetty-8.1.14.v20131031
+2015-12-08 17:36:45,590 | INFO  | pool-9-thread-1  | AbstractConnector                | ?                                   ? | 94 - org.eclipse.jetty.aggregate.jetty-all-server - 8.1.14.v20131031 | Started SelectChannelConnector@0.0.0.0:8181
+2015-12-08 17:36:45,590 | INFO  | pool-9-thread-1  | JettyServerImpl                  | ?                                   ? | 102 - org.ops4j.pax.web.pax-web-jetty - 3.0.6 | Pax Web available at [0.0.0.0]:[8181]
+2015-12-08 17:36:45,654 | INFO  | r-1.2.1-thread-1 | ContextLoaderListener            | ?                                   ? | 146 - org.springframework.osgi.extender - 1.2.1 | Starting [org.springframework.osgi.extender] bundle v.[1.2.1]
+2015-12-08 17:36:45,682 | WARN  | r-1.2.1-thread-1 | NamespaceManager                 | ?                                   ? | 146 - org.springframework.osgi.extender - 1.2.1 | Bundle Apache Aries Transaction Enlisting JDBC Datasource (org.apache.aries.transaction.jdbc) cannot see class [org.springframework.beans.factory.xml.NamespaceHandlerResolver]; ignoring its namespace handlers
+2015-12-08 17:36:45,729 | INFO  | r-1.2.1-thread-1 | ExtenderConfiguration            | ?                                   ? | 146 - org.springframework.osgi.extender - 1.2.1 | No custom extender configuration detected; using defaults...
+2015-12-08 17:36:45,734 | INFO  | r-1.2.1-thread-1 | TimerTaskExecutor                | ?                                   ? | 125 - org.apache.servicemix.bundles.spring-context - 3.2.9.RELEASE_1 | Initializing Timer
+2015-12-08 17:36:46,188 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: DataStoreTemplateRegistry{callback=null}
+2015-12-08 17:36:46,195 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.zookeeper.bootstrap.RuntimePropertiesService@2423f1ce
+2015-12-08 17:36:46,201 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.zookeeper.curator.CuratorACLManager@16c05b8c
+2015-12-08 17:36:46,426 | INFO  | hat-412-thread-1 | DeploymentAgent                  | ?                                   ? | 63 - io.fabric8.fabric-agent - 1.0.0.redhat-412 | Starting DeploymentAgent
+2015-12-08 17:36:46,441 | INFO  | .fabric8.agent]) | DeploymentAgent                  | ?                                   ? | 63 - io.fabric8.fabric-agent - 1.0.0.redhat-412 | DeploymentAgent updated with null
+2015-12-08 17:36:46,597 | INFO  | -611412-thread-1 | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-management (162) [org.apache.cxf.management.InstrumentationManager]
+2015-12-08 17:36:46,739 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-soap (167) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+2015-12-08 17:36:46,786 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-xml (168) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+2015-12-08 17:36:46,816 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http (171) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+2015-12-08 17:36:46,817 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-policy (190) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+2015-12-08 17:36:46,903 | INFO  | e-3.0.6-thread-3 | HttpServiceFactoryImpl           | ?                                   ? | 100 - org.ops4j.pax.web.pax-web-runtime - 3.0.6 | Binding bundle: [org.apache.cxf.cxf-rt-transports-http [171]] to http service
+2015-12-08 17:36:47,096 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-frontend-jaxws (173) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+2015-12-08 17:36:47,273 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-corba (180) [org.apache.cxf.binding.corba.CorbaBindingFactory, org.apache.cxf.binding.corba.wsdl.WSDLExtensionRegister]
+2015-12-08 17:36:47,344 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-local (182) [org.apache.cxf.transport.local.LocalTransportFactory]
+2015-12-08 17:36:47,389 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-bindings-object (183) [org.apache.cxf.binding.object.ObjectBindingFactory]
+2015-12-08 17:36:47,445 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-http-jetty (184) [org.apache.cxf.transport.http_jetty.JettyDestinationFactory, org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory, org.apache.cxf.transport.http.ContinuationProviderFactory]
+2015-12-08 17:36:47,542 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-jms (186) [org.apache.cxf.transport.jms.JMSTransportFactory, org.apache.cxf.transport.jms.wsdl11.JMSWSDLExtensionLoader]
+2015-12-08 17:36:47,555 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-transports-udp (187) [org.apache.cxf.transport.udp.UDPTransportFactory]
+2015-12-08 17:36:47,633 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-addr (195) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+2015-12-08 17:36:47,695 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-security (197) [org.apache.cxf.ws.security.policy.WSSecurityPolicyLoader, org.apache.cxf.ws.security.cache.CacheCleanupListener]
+2015-12-08 17:36:47,698 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-mex (199) [org.apache.cxf.ws.mex.MEXServerListener]
+2015-12-08 17:36:47,717 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-ws-rm (198) [org.apache.cxf.ws.rm.RMManager, org.apache.cxf.ws.rm.policy.RMPolicyInterceptorProvider, org.apache.cxf.ws.rm.policy.RMAssertionBuilder, org.apache.cxf.ws.rm.policy.RM11AssertionBuilder]
+2015-12-08 17:36:47,752 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.cxf.cxf-rt-javascript (200) [org.apache.cxf.javascript.JavascriptQueryHandler]
+2015-12-08 17:36:47,990 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.service.PortPlaceholderResolver@4cdb3ef8
+2015-12-08 17:36:48,001 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.service.ProfilePropertyPointerResolver@6f988490
+2015-12-08 17:36:48,005 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.service.VersionPropertyPointerResolver@30e5dde1
+2015-12-08 17:36:48,051 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.service.ComponentConfigurer@5491f79a
+2015-12-08 17:36:48,083 | INFO  | hat-412-thread-5 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.zookeeper.bootstrap.BootstrapConfiguration@69175e37
+2015-12-08 17:36:48,085 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.internal.ZooKeeperClusterBootstrapImpl@7a24f703
+2015-12-08 17:36:48,086 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.api.jmx.ClusterBootstrapManager@6ebb6497
+2015-12-08 17:36:48,101 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.zookeeper.curator.ManagedCuratorFramework@f6292f0
+2015-12-08 17:36:49,173 | INFO  | -611412-thread-1 | Activator                        | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Camel activator starting
+2015-12-08 17:36:49,332 | INFO  | -611412-thread-1 | Activator                        | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Camel activator started
+2015-12-08 17:36:49,495 | INFO  | FelixStartLevel  | CXFActivator                     | ?                                   ? | 164 - org.apache.cxf.cxf-rt-core - 2.7.0.redhat-611412 | Adding the extensions from bundle org.apache.camel.camel-cxf-transport (206) [org.apache.camel.component.cxf.transport.CamelTransportFactory]
+2015-12-08 17:36:49,890 | INFO  | -611412-thread-1 | Activator                        | ?                                   ? | 228 - org.apache.camel.camel-script - 2.12.0.redhat-611412 | Camel-Script activator starting
+2015-12-08 17:36:49,931 | INFO  | -611412-thread-1 | Activator                        | ?                                   ? | 228 - org.apache.camel.camel-script - 2.12.0.redhat-611412 | Camel-Script activator started
+2015-12-08 17:36:49,988 | INFO  | l-2.1.9-thread-2 | Activator                        | ?                                   ? | 228 - org.apache.camel.camel-script - 2.12.0.redhat-611412 | Found ScriptEngineFactory in groovy-all
+2015-12-08 17:36:50,465 | INFO  | hat-412-thread-3 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.git.internal.FabricGitServiceImpl@7bfccc86
+2015-12-08 17:36:50,468 | INFO  | hat-412-thread-3 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.boot.BootstrapCompleteService@7f3220e3
+2015-12-08 17:36:50,470 | INFO  | hat-412-thread-2 | AbstractCommandComponent         | ?                                   ? | 65 - io.fabric8.fabric-boot-commands - 1.0.0.redhat-412 | activateComponent: io.fabric8.boot.commands.CreateCommand@482e014a
+2015-12-08 17:36:50,478 | INFO  | hat-412-thread-2 | AbstractCommandComponent         | ?                                   ? | 65 - io.fabric8.fabric-boot-commands - 1.0.0.redhat-412 | activateComponent: io.fabric8.boot.commands.JoinCommand@5955a2bf
+2015-12-08 17:36:50,588 | INFO  | e-3.0.6-thread-4 | HttpServiceFactoryImpl           | ?                                   ? | 100 - org.ops4j.pax.web.pax-web-runtime - 3.0.6 | Binding bundle: [io.fabric8.fabric-redirect [105]] to http service
+2015-12-08 17:36:50,595 | INFO  | hat-412-thread-2 | AbstractComponent                | ?                                   ? | 62 - io.fabric8.fabric-api - 1.0.0.redhat-412 | activateComponent: io.fabric8.redirect.RedirectRegistration@49627ae4
+2015-12-08 17:36:50,803 | INFO  | hat-412-thread-2 | BlueprintContainerImpl           | ?                                   ? | 14 - org.apache.aries.blueprint.core - 1.0.1.redhat-611412 | Bundle org.fusesource.patch.patch-commands is waiting for dependencies [(objectClass=org.fusesource.patch.Service)]
+2015-12-08 17:36:50,827 | WARN  | -3.15.0-thread-2 | NamespaceManager                 | ?                                   ? | 146 - org.springframework.osgi.extender - 1.2.1 | Bundle Apache XBean :: Classloader (org.apache.xbean.classloader) cannot see class [org.springframework.beans.factory.xml.NamespaceHandlerResolver]; ignoring its namespace handlers
+2015-12-08 17:36:51,063 | INFO  | .fabric.server]) | ActiveMQServiceFactory           | ?                                   ? | 142 - org.jboss.amq.mq-fabric - 6.1.1.redhat-412 | Standalone broker amq is starting.
+2015-12-08 17:36:51,064 | INFO  | .fabric.server]) | ActiveMQServiceFactory           | ?                                   ? | 142 - org.jboss.amq.mq-fabric - 6.1.1.redhat-412 | Broker amq is being started.
+2015-12-08 17:36:51,075 | INFO  | pool-15-thread-1 | ActiveMQServiceFactory           | ?                                   ? | 142 - org.jboss.amq.mq-fabric - 6.1.1.redhat-412 | booting up a broker from: /opt/fuse/jboss-fuse-6.1.1.redhat-412/etc/activemq.xml
+2015-12-08 17:36:51,079 | INFO  | hat-412-thread-2 | ActiveMQConnectionFactoryService | ?                                   ? | 142 - org.jboss.amq.mq-fabric - 6.1.1.redhat-412 | Configuring org.fusesource.mq.fabric.cf.ActiveMQConnectionFactoryService@577e82d with brokerUrl: discovery:(fabric:default) and user: admin
+2015-12-08 17:36:51,094 | INFO  | pool-15-thread-1 | ActiveMQServiceFactory$$anon$1   | ?                                   ? | 125 - org.apache.servicemix.bundles.spring-context - 3.2.9.RELEASE_1 | Refreshing org.fusesource.mq.fabric.ActiveMQServiceFactory$$anon$1@7f79739f: startup date [Tue Dec 08 17:36:51 CET 2015]; root of context hierarchy
+2015-12-08 17:36:51,157 | INFO  | pool-15-thread-1 | XBeanXmlBeanDefinitionReader     | ?                                   ? | 122 - org.apache.servicemix.bundles.spring-beans - 3.2.9.RELEASE_1 | Loading XML bean definitions from file [/opt/fuse/jboss-fuse-6.1.1.redhat-412/etc/activemq.xml]
+2015-12-08 17:36:51,629 | INFO  | pool-15-thread-1 | DefaultListableBeanFactory       | ?                                   ? | 122 - org.apache.servicemix.bundles.spring-beans - 3.2.9.RELEASE_1 | Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@185efb98: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.apache.activemq.xbean.XBeanBrokerService#0]; root of factory hierarchy
+2015-12-08 17:36:51,633 | INFO  | pool-15-thread-1 | BrokerService                    | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Loaded the Bouncy Castle security provider.
+2015-12-08 17:36:51,878 | INFO  | pool-15-thread-1 | PListStoreImpl                   | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | PListStore:[/opt/fuse/jboss-fuse-6.1.1.redhat-412/data/amq/amq/tmp_storage] started
+2015-12-08 17:36:52,029 | INFO  | pool-15-thread-1 | BrokerService                    | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Using Persistence Adapter: KahaDBPersistenceAdapter[/opt/fuse/jboss-fuse-6.1.1.redhat-412/data/amq/kahadb]
+2015-12-08 17:36:52,053 | INFO  | e-3.0.6-thread-5 | HttpServiceFactoryImpl           | ?                                   ? | 100 - org.ops4j.pax.web.pax-web-runtime - 3.0.6 | Binding bundle: [io.hawt.hawtio-web [248]] to http service
+2015-12-08 17:36:52,227 | INFO  | pool-10-thread-1 | ConfigManager                    | ?                                   ? | 248 - io.hawt.hawtio-web - 1.2.0.redhat-412 | Configuration will be discovered via system properties
+2015-12-08 17:36:52,228 | INFO  | pool-10-thread-1 | JmxTreeWatcher                   | ?                                   ? | 248 - io.hawt.hawtio-web - 1.2.0.redhat-412 | Welcome to hawtio 1.2-redhat-412 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-)
+2015-12-08 17:36:52,230 | INFO  | pool-10-thread-1 | UploadManager                    | ?                                   ? | 248 - io.hawt.hawtio-web - 1.2.0.redhat-412 | Using file upload directory: /opt/fuse/jboss-fuse-6.1.1.redhat-412/data/tmp/uploads
+2015-12-08 17:36:52,233 | INFO  | pool-10-thread-1 | AuthenticationFilter             | ?                                   ? | 248 - io.hawt.hawtio-web - 1.2.0.redhat-412 | Starting hawtio authentication filter, JAAS realm: "karaf" authorized role: "admin" role principal classes: ""
+2015-12-08 17:36:52,304 | INFO  | e-3.0.6-thread-6 | HttpServiceFactoryImpl           | ?                                   ? | 100 - org.ops4j.pax.web.pax-web-runtime - 3.0.6 | Binding bundle: [io.hawt.hawtio-karaf-terminal [250]] to http service
+2015-12-08 17:36:52,325 | INFO  | pool-10-thread-1 | hawtio-web - 248}                | ?                                   ? | 94 - org.eclipse.jetty.aggregate.jetty-all-server - 8.1.14.v20131031 | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed
+2015-12-08 17:36:52,363 | INFO  | pool-10-thread-2 | ConfigManager                    | ?                                   ? | 250 - io.hawt.hawtio-karaf-terminal - 1.2.0.redhat-412 | Configuration will be discovered via system properties
+2015-12-08 17:36:52,364 | INFO  | pool-10-thread-2 | AuthenticationFilter             | ?                                   ? | 250 - io.hawt.hawtio-karaf-terminal - 1.2.0.redhat-412 | Starting hawtio authentication filter, JAAS realm: "karaf" authorized role: "admin" role principal classes: ""
+2015-12-08 17:36:52,395 | WARN  | hat-412-thread-2 | ConfigFacade                     | ?                                   ? | 251 - io.hawt.hawtio-maven-indexer - 1.2.0.redhat-412 | No ConfigFacade constructed yet so using default configuration for now
+2015-12-08 17:36:52,415 | INFO  | pool-10-thread-2 | LoginServlet                     | ?                                   ? | 250 - io.hawt.hawtio-karaf-terminal - 1.2.0.redhat-412 | hawtio login is using 1800 sec. HttpSession timeout
+2015-12-08 17:36:52,428 | INFO  | pool-15-thread-1 | MessageDatabase                  | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | KahaDB is version 5
+2015-12-08 17:36:52,430 | INFO  | pool-10-thread-1 | LoginServlet                     | ?                                   ? | 248 - io.hawt.hawtio-web - 1.2.0.redhat-412 | hawtio login is using 1800 sec. HttpSession timeout
+2015-12-08 17:36:52,443 | INFO  | pool-15-thread-1 | MessageDatabase                  | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Recovering from the journal ...
+2015-12-08 17:36:52,448 | INFO  | NAPSHOT-thread-2 | ultOsgiApplicationContextCreator | ?                                   ? | 146 - org.springframework.osgi.extender - 1.2.1 | Discovered configurations {osgibundle:/META-INF/spring/*.xml} in bundle [hazelcast-endpoint (com.hazelcast.api.hazelcast-endpoint)]
+2015-12-08 17:36:52,452 | INFO  | pool-15-thread-1 | MessageDatabase                  | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Recovery replayed 173 operations from the journal in 0.018 seconds.
+2015-12-08 17:36:52,465 | INFO  | ExtenderThread-1 | OsgiBundleXmlApplicationContext  | ?                                   ? | 125 - org.apache.servicemix.bundles.spring-context - 3.2.9.RELEASE_1 | Refreshing OsgiBundleXmlApplicationContext(bundle=com.hazelcast.api.hazelcast-endpoint, config=osgibundle:/META-INF/spring/*.xml): startup date [Tue Dec 08 17:36:52 CET 2015]; root of context hierarchy
+2015-12-08 17:36:52,466 | INFO  | ExtenderThread-1 | OsgiBundleXmlApplicationContext  | ?                                   ? | 125 - org.apache.servicemix.bundles.spring-context - 3.2.9.RELEASE_1 | Application Context service already unpublished
+2015-12-08 17:36:52,485 | INFO  | ExtenderThread-1 | XmlBeanDefinitionReader          | ?                                   ? | 122 - org.apache.servicemix.bundles.spring-beans - 3.2.9.RELEASE_1 | Loading XML bean definitions from URL [bundle://263.0:0/META-INF/spring/camel-context.xml]
+2015-12-08 17:36:52,567 | INFO  | ExtenderThread-1 | XmlBeanDefinitionReader          | ?                                   ? | 122 - org.apache.servicemix.bundles.spring-beans - 3.2.9.RELEASE_1 | Loading XML bean definitions from OSGi resource[classpath:/META-INF/spring/include/beans.xml|bnd.id=263|bnd.sym=com.hazelcast.api.hazelcast-endpoint]
+2015-12-08 17:36:52,632 | INFO  | pool-15-thread-1 | BrokerService                    | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Apache ActiveMQ 5.9.0.redhat-611412 (amq, ID:vagrantdevbox-35525-1449592612475-0:1) is starting
+2015-12-08 17:36:52,662 | INFO  | ExtenderThread-1 | CamelNamespaceHandler            | ?                                   ? | 150 - org.apache.camel.camel-spring - 2.12.0.redhat-611412 | OSGi environment detected.
+2015-12-08 17:36:52,701 | INFO  | pool-15-thread-1 | TransportServerThreadSupport     | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Listening for connections at: tcp://vagrantdevbox:61616?maximumConnections=1000
+2015-12-08 17:36:52,702 | INFO  | pool-15-thread-1 | TransportConnector               | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Connector openwire started
+2015-12-08 17:36:52,703 | INFO  | pool-15-thread-1 | BrokerService                    | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Apache ActiveMQ 5.9.0.redhat-611412 (amq, ID:vagrantdevbox-35525-1449592612475-0:1) started
+2015-12-08 17:36:52,703 | INFO  | pool-15-thread-1 | BrokerService                    | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | For help or more information please see: http://activemq.apache.org
+2015-12-08 17:36:52,703 | WARN  | pool-15-thread-1 | BrokerService                    | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Store limit is 102400 mb (current store usage is 0 mb). The data directory: /opt/fuse/jboss-fuse-6.1.1.redhat-412/data/amq/kahadb only has 7004 mb of usable space - resetting to maximum available disk space: 7004 mb
+2015-12-08 17:36:52,704 | ERROR | pool-15-thread-1 | BrokerService                    | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Temporary Store limit is 51200 mb, whilst the temporary data directory: /opt/fuse/jboss-fuse-6.1.1.redhat-412/data/amq/amq/tmp_storage only has 7004 mb of usable space - resetting to maximum available 7004 mb.
+2015-12-08 17:36:52,718 | INFO  | pool-15-thread-1 | ActiveMQServiceFactory           | ?                                   ? | 142 - org.jboss.amq.mq-fabric - 6.1.1.redhat-412 | Broker amq has started.
+2015-12-08 17:36:53,465 | INFO  | ExtenderThread-1 | WaiterApplicationContextExecutor | ?                                   ? | 146 - org.springframework.osgi.extender - 1.2.1 | No outstanding OSGi service dependencies, completing initialization for OsgiBundleXmlApplicationContext(bundle=com.hazelcast.api.hazelcast-endpoint, config=osgibundle:/META-INF/spring/*.xml)
+2015-12-08 17:36:53,487 | INFO  | ExtenderThread-2 | DefaultListableBeanFactory       | ?                                   ? | 122 - org.apache.servicemix.bundles.spring-beans - 3.2.9.RELEASE_1 | Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3b12924b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,instance,map,jms,apiRouteBuilder,template,consumerTemplate,hz-api:beanPostProcessor,hz-api]; root of factory hierarchy
+2015-12-08 17:36:53,545 | INFO  | ExtenderThread-2 | DefaultAddressPicker             | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [LOCAL] [dev] [3.5.3] Prefer IPv4 stack is true.
+2015-12-08 17:36:53,548 | INFO  | ExtenderThread-2 | DefaultAddressPicker             | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [LOCAL] [dev] [3.5.3] Picked Address[172.17.0.1]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2015-12-08 17:36:53,554 | WARN  | ExtenderThread-2 | ServiceLoader                    | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | Service loader could not load 'META-INF/services/com.hazelcast.instance.NodeExtension' It may be empty or does not exist.
+2015-12-08 17:36:53,566 | WARN  | ExtenderThread-2 | ServiceLoader                    | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | Service loader could not load 'META-INF/services/com.hazelcast.PortableHook' It may be empty or does not exist.
+2015-12-08 17:36:53,568 | WARN  | ExtenderThread-2 | ServiceLoader                    | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | Service loader could not load 'META-INF/services/com.hazelcast.DataSerializerHook' It may be empty or does not exist.
+2015-12-08 17:36:53,577 | WARN  | ExtenderThread-2 | ServiceLoader                    | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | Service loader could not load 'META-INF/services/com.hazelcast.SerializerHook' It may be empty or does not exist.
+2015-12-08 17:36:53,597 | INFO  | ExtenderThread-2 | OperationService                 | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [172.17.0.1]:5701 [dev] [3.5.3] Backpressure is disabled
+2015-12-08 17:36:53,606 | INFO  | ExtenderThread-2 | ClassicOperationExecutor         | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [172.17.0.1]:5701 [dev] [3.5.3] Starting with 2 generic operation threads and 4 partition operation threads.
+2015-12-08 17:36:53,872 | INFO  | ExtenderThread-2 | system                           | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [172.17.0.1]:5701 [dev] [3.5.3] Hazelcast 3.5.3 (20151011 - 64c663a) starting at Address[172.17.0.1]:5701
+2015-12-08 17:36:53,872 | INFO  | ExtenderThread-2 | system                           | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [172.17.0.1]:5701 [dev] [3.5.3] Copyright (c) 2008-2015, Hazelcast, Inc. All Rights Reserved.
+2015-12-08 17:36:53,879 | INFO  | ExtenderThread-2 | Node                             | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [172.17.0.1]:5701 [dev] [3.5.3] Creating MulticastJoiner
+2015-12-08 17:36:53,882 | INFO  | ExtenderThread-2 | LifecycleService                 | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [172.17.0.1]:5701 [dev] [3.5.3] Address[172.17.0.1]:5701 is STARTING
+2015-12-08 17:36:55,727 | INFO  | de startup timer | MavenIndexerFacade               | ?                                   ? | 251 - io.hawt.hawtio-maven-indexer - 1.2.0.redhat-412 | Storing maven index files in local directory: /opt/fuse/jboss-fuse-6.1.1.redhat-412/data/mavenIndexer
+2015-12-08 17:36:56,077 | INFO  | ExtenderThread-2 | MulticastJoiner                  | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [172.17.0.1]:5701 [dev] [3.5.3] 
+
+
+Members [1] {
+	Member [172.17.0.1]:5701 this
+}
+
+2015-12-08 17:36:56,114 | INFO  | ExtenderThread-2 | LifecycleService                 | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [172.17.0.1]:5701 [dev] [3.5.3] Address[172.17.0.1]:5701 is STARTED
+2015-12-08 17:36:56,325 | INFO  | de startup timer | MavenIndexerFacade               | ?                                   ? | 251 - io.hawt.hawtio-maven-indexer - 1.2.0.redhat-412 | Updating the maven indices. This may take a while, please be patient...
+2015-12-08 17:36:56,590 | INFO  | ExtenderThread-2 | OsgiSpringCamelContext           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Apache Camel 2.12.0.redhat-611412 (CamelContext: hz-api) is starting
+2015-12-08 17:36:56,590 | INFO  | ExtenderThread-2 | OsgiSpringCamelContext           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Tracing is enabled on CamelContext: hz-api
+2015-12-08 17:36:56,591 | INFO  | ExtenderThread-2 | ManagedManagementStrategy        | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | JMX is enabled
+2015-12-08 17:36:56,718 | INFO  | de startup timer | MavenIndexerFacade               | ?                                   ? | 251 - io.hawt.hawtio-maven-indexer - 1.2.0.redhat-412 | Completed updating 2 maven indices.
+2015-12-08 17:36:56,843 | WARN  | ExtenderThread-2 | DefaultTypeConverter             | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Overriding type converter from: StaticMethodTypeConverter: public static java.io.InputStream org.apache.camel.component.http4.HttpConverter.toInputStream(javax.servlet.http.HttpServletRequest,org.apache.camel.Exchange) throws java.io.IOException to: StaticMethodTypeConverter: public static java.io.InputStream org.apache.camel.component.http.HttpConverter.toInputStream(javax.servlet.http.HttpServletRequest,org.apache.camel.Exchange) throws java.io.IOException
+2015-12-08 17:36:56,844 | WARN  | ExtenderThread-2 | DefaultTypeConverter             | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Overriding type converter from: StaticMethodTypeConverter: public static javax.servlet.http.HttpServletRequest org.apache.camel.component.http4.HttpConverter.toServletRequest(org.apache.camel.Message) to: StaticMethodTypeConverter: public static javax.servlet.http.HttpServletRequest org.apache.camel.component.http.HttpConverter.toServletRequest(org.apache.camel.Message)
+2015-12-08 17:36:56,844 | WARN  | ExtenderThread-2 | DefaultTypeConverter             | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Overriding type converter from: StaticMethodTypeConverter: public static javax.servlet.http.HttpServletResponse org.apache.camel.component.http4.HttpConverter.toServletResponse(org.apache.camel.Message) to: StaticMethodTypeConverter: public static javax.servlet.http.HttpServletResponse org.apache.camel.component.http.HttpConverter.toServletResponse(org.apache.camel.Message)
+2015-12-08 17:36:57,230 | INFO  | ExtenderThread-2 | OsgiSpringCamelContext           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | AllowUseOriginalMessage is enabled. If access to the original message is not needed, then its recommended to turn this option off as it may improve performance.
+2015-12-08 17:36:57,231 | INFO  | ExtenderThread-2 | OsgiSpringCamelContext           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2015-12-08 17:36:57,488 | INFO  | ExtenderThread-2 | OsgiSpringCamelContext           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Route: route1 started and consuming from: Endpoint[jms://queue:startEndpoint]
+2015-12-08 17:36:57,491 | INFO  | ExtenderThread-2 | OsgiSpringCamelContext           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Route: route2 started and consuming from: Endpoint[direct-vm://testHZ]
+2015-12-08 17:36:57,506 | INFO  | ExtenderThread-2 | OsgiSpringCamelContext           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Total 2 routes, of which 2 is started.
+2015-12-08 17:36:57,507 | INFO  | ExtenderThread-2 | OsgiSpringCamelContext           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | Apache Camel 2.12.0.redhat-611412 (CamelContext: hz-api) started in 0.916 seconds
+2015-12-08 17:36:57,523 | INFO  | ExtenderThread-2 | OsgiBundleXmlApplicationContext  | ?                                   ? | 125 - org.apache.servicemix.bundles.spring-context - 3.2.9.RELEASE_1 | Publishing application context as OSGi service with properties {org.springframework.context.service.name=com.hazelcast.api.hazelcast-endpoint, Bundle-SymbolicName=com.hazelcast.api.hazelcast-endpoint, Bundle-Version=1.0.0.RC1-SNAPSHOT}
+2015-12-08 17:36:57,557 | INFO  | ExtenderThread-2 | ContextLoaderListener            | ?                                   ? | 146 - org.springframework.osgi.extender - 1.2.1 | Application context successfully refreshed (OsgiBundleXmlApplicationContext(bundle=com.hazelcast.api.hazelcast-endpoint, config=osgibundle:/META-INF/spring/*.xml))
+2015-12-08 17:42:53,084 | INFO  | qtp226125010-845 | TransportConnector               | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Connector vm://amq started
+2015-12-08 17:42:53,150 | INFO  | qtp226125010-845 | TransportConnector               | ?                                   ? | 132 - org.apache.activemq.activemq-osgi - 5.9.0.redhat-611412 | Connector vm://amq stopped
+2015-12-08 17:42:53,203 | INFO  | r[startEndpoint] | Tracer                           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | ID-vagrantdevbox-34642-1449592616377-0-1 >>> (route1) from(jms://queue:startEndpoint) --> direct-vm://testHZ <<< Pattern:InOnly, Headers:{JMSTimestamp=1449592973125, JMSXGroupID=null, JMSExpiration=0, JMSRedelivered=false, JMSDestination=queue://startEndpoint, JMSCorrelationID=null, JMSMessageID=ID:vagrantdevbox-35525-1449592612475-5:1:1:1:1, JMSPriority=0, JMSXUserID=null, JMSDeliveryMode=1, JMSType=null, breadcrumbId=ID:vagrantdevbox-35525-1449592612475-5:1:1:1:1, JMSReplyTo=null}, BodyType:String, Body:
+
+
+
+{
+  "coord": {
+    "lon": 4.89,
+    "lat": 52.37
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "Sky is Clear",
+      "icon": "01d"
+    }
+  ],
+  "base": "cmc stations",
+  "main": {
+    "temp": 284.5,
+    "pressure": 1024,
+    "humidity": 76,
+    "temp_min": 284.15,
+    "temp_max": 285.15
+  },
+  "wind": {
+    "speed": 7.7,
+    "deg": 210
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1449059100,
+  "sys": {
+    "type": 1,
+    "id": 5204,
+    "message": 0.0048,
+    "country": "NL",
+    "sunrise": 1449041365,
+    "sunset": 1449070208
+  },
+  "id": 2759794,
+  "name": "Amsterdam",
+  "cod": 200
+}
+2015-12-08 17:42:53,216 | INFO  | r[startEndpoint] | Tracer                           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | ID-vagrantdevbox-34642-1449592616377-0-2 >>> (route2) from(direct-vm://testHZ) --> com.hazelcast.routes.ApiRouteBuilder$2@db8c02 <<< Pattern:InOnly, Headers:{JMSPriority=0, JMSMessageID=ID:vagrantdevbox-35525-1449592612475-5:1:1:1:1, JMSReplyTo=null, JMSType=null, breadcrumbId=ID:vagrantdevbox-35525-1449592612475-5:1:1:1:1, JMSDestination=queue://startEndpoint, JMSRedelivered=false, JMSTimestamp=1449592973125, JMSXUserID=null, JMSDeliveryMode=1, JMSXGroupID=null, JMSCorrelationID=null, JMSExpiration=0}, BodyType:String, Body:
+
+
+
+{
+  "coord": {
+    "lon": 4.89,
+    "lat": 52.37
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "Sky is Clear",
+      "icon": "01d"
+    }
+  ],
+  "base": "cmc stations",
+  "main": {
+    "temp": 284.5,
+    "pressure": 1024,
+    "humidity": 76,
+    "temp_min": 284.15,
+    "temp_max": 285.15
+  },
+  "wind": {
+    "speed": 7.7,
+    "deg": 210
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1449059100,
+  "sys": {
+    "type": 1,
+    "id": 5204,
+    "message": 0.0048,
+    "country": "NL",
+    "sunrise": 1449041365,
+    "sunset": 1449070208
+  },
+  "id": 2759794,
+  "name": "Amsterdam",
+  "cod": 200
+}
+2015-12-08 17:42:53,567 | INFO  | r[startEndpoint] | InternalPartitionService         | ?                                   ? | 263 - com.hazelcast.api.hazelcast-endpoint - 1.0.0.RC1-SNAPSHOT | [172.17.0.1]:5701 [dev] [3.5.3] Initializing cluster partition table first arrangement...
+2015-12-08 17:42:53,593 | INFO  | r[startEndpoint] | Tracer                           | ?                                   ? | 144 - org.apache.camel.camel-core - 2.12.0.redhat-611412 | ID-vagrantdevbox-34642-1449592616377-0-1 >>> (route1) direct-vm://testHZ --> com.hazelcast.routes.ApiRouteBuilder$1@6de37185 <<< Pattern:InOnly, Headers:{JMSXUserID=null, JMSRedelivered=false, JMSTimestamp=1449592973125, JMSType=null, breadcrumbId=ID:vagrantdevbox-35525-1449592612475-5:1:1:1:1, JMSDeliveryMode=1, JMSXGroupID=null, JMSReplyTo=null, JMSCorrelationID=null, JMSDestination=queue://startEndpoint, JMSPriority=0, JMSMessageID=ID:vagrantdevbox-35525-1449592612475-5:1:1:1:1, JMSExpiration=0}, BodyType:String, Body:{"coord":{"lon":4.89,"lat":52.37},"base":"testhz"}
+{"coord":{"lon":4.89,"lat":52.37},"base":"testhz"}
+done
+

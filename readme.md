@@ -7,6 +7,13 @@ At this point in time, this project was created to reflect the issue on HZ and p
 [Hazelcast 3.5.3 conflicts with FUSE 6.1](https://github.com/hazelcast/hazelcast/issues/6821)
 
 
+REQUIRED SOFTWARE
+=================
+Download and install JBOSS FUSE 6.1
+
+[jboss-fuse-6.1.0.GA](http://www.jboss.org/download-manager/file/jboss-fuse-6.1.0.GA-medium_zip.zip)
+
+
 INSTALL STEPS
 ==============
 
