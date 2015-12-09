@@ -184,6 +184,7 @@
                     <instructions>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Private-Package>
+                            META-INF.services.*,
                             de.odysseus.staxon.*,
                             com.hazelcast.*,
                             com.hazelcast.client.impl,
