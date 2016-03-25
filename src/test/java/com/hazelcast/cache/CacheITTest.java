@@ -1,16 +1,6 @@
 package com.hazelcast.cache;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hazelcast.core.Hazelcast;
-import com.hazelcast.core.IMap;
-import com.hazelcast.vo.WeatherVO;
-import junit.framework.Assert;
 import org.apache.camel.Exchange;
-import org.apache.camel.Processor;
-import org.apache.camel.builder.AdviceWithRouteBuilder;
-import org.apache.camel.impl.DefaultCamelContext;
 import org.apache.camel.impl.DefaultExchange;
 import org.apache.camel.testng.CamelSpringTestSupport;
 import org.springframework.context.support.AbstractApplicationContext;

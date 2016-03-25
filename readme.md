@@ -21,7 +21,7 @@ Steps to install and test the artifact:
 
 Add URL
 ```
-addurl mvn:com.hazelcast.api/hazelcast-endpoint/1.0.0.RC1-SNAPSHOT/xml/features
+addurl mvn:com.hazelcast.api/hazelcast-endpoint/1.0.0.RC2-SNAPSHOT/xml/features
 ```
 
 Install the artifact:
@@ -33,7 +33,7 @@ Verify is started:
 
 ```
 list |grep hazel
-[ 431] [Active     ] [            ] [Started] [   60] hazelcast-endpoint (1.0.0.RC1-SNAPSHOT)
+[ 431] [Active     ] [            ] [Started] [   60] hazelcast-endpoint (1.0.0.RC2-SNAPSHOT)
 ```
 
 set your Karaf terminal to read logs:

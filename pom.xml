@@ -5,12 +5,12 @@
 
     <groupId>com.hazelcast.api</groupId>
     <artifactId>hazelcast-endpoint</artifactId>
-    <version>1.0.0.RC1-SNAPSHOT</version>
+    <version>1.0.0.RC2-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
     <properties>
         <hazelcast.monitor.version>1.9.3.4</hazelcast.monitor.version>
-        <hazelcast.version>3.5.3</hazelcast.version>
+        <hazelcast.version>3.6-EA2</hazelcast.version>
         <jackson.version>2.6.3</jackson.version>
         <httpcore.version>4.2.3</httpcore.version>
         <staxon.version>1.3</staxon.version>
@@ -19,6 +19,7 @@
         <spring.version>3.2.9.RELEASE</spring.version>
         <spring.osgi.version>1.2.1</spring.osgi.version>
         <osgi.core.version>4.3.1</osgi.core.version>
+        <activemq.version>5.8.0.redhat-60024</activemq.version>
 
     </properties>
 
@@ -147,6 +148,15 @@
             <version>${staxon.version}</version>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-camel</artifactId>
+            <version>${activemq.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+
     </dependencies>
 
     <build>
@@ -205,9 +215,10 @@
                             com.hazelcast.memory,
                             com.hazelcast.util,
                             com.hazelcast.cluster,
-                            com.hazelcast.cluster.impl,
+                            com.hazelcast.cluster.impl.*,
                             com.hazelcast.cluster.impl.operations,
                             com.hazelcast.partition,
+                            com.hazelcast.partition.impl,
                             com.hazelcast.logging,
                             com.hazelcast.config,
                             com.hazelcast.nio.*,
@@ -238,13 +249,15 @@
                             javax.xml.parsers,
                             javax.script,
                             javax.security.auth.login,
+                            javax.security.auth.callback,
                             org.apache.activemq,
                             org.apache.activemq.camel.component,
                             org.apache.activemq.pool,
                             org.apache.camel,
                             org.apache.camel.builder,
-                            org.apache.camel.builder.xml.*,
+                            org.apache.camel.builder.xml,
                             org.apache.camel.component.jms,
+                            org.apache.camel.component.directvm,
                             org.apache.camel.impl,
                             org.apache.camel.management.event,
                             org.apache.camel.model,
